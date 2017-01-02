@@ -1,3 +1,11 @@
+/*Apply border-box to all elements*/
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
 
 /*
  *****************************************
@@ -5,36 +13,107 @@
  *****************************************
 */
 
+/*Both Nav bar rules*/
+
 nav li {
   display: inline;
-  vertical-align: -7px;
-  margin: 7px 0 0 10px;
-  color: rgba(255, 255, 255, 0.6);
-  font: 800 12px 'Arimo', sans-serif;
+  margin: 7px 4px 0 18px;
 }
 
 nav li:hover {
-  color: #fff;
   cursor: pointer; 
   cursor: hand;
 }
 
-nav ul li:first-child {
-  color: #fff;
-}
+.li-right {float: right}
 
-nav ul li:nth-child(8) {margin-right: 10px;}
+/*top-nav rules*/
 
 #top-nav {
   height: 30px;
   background-color: #000;
 }
 
-.li-right {
-  float: right;
+#top-nav li {
+  vertical-align: -7px;
+  margin: 7px 0 0 10px;
+  color: rgba(255, 255, 255, 0.6);
+  font: 800 12px 'Arimo', sans-serif;
 }
 
+#top-nav li:first-child {color: #fff}
 
+#top-nav li:nth-child(8) {margin-right: 10px;}
+
+#top-nav li:hover {color: #fff}
+
+/*bottom-nav rules*/
+
+#bottom-nav {
+  height: 51px;
+  /*temp 51.. move to 50 and remove border bottom*/
+  border-bottom: 1px solid black;
+  background-color: #fff;
+}
+
+#bottom-nav li {
+  vertical-align: -19px;
+  /*margin: 7px 0 0 10px;*/
+  color: #aeabaa;
+  font: 800 16px 'Ropa Sans', sans-serif;
+  text-transform: uppercase;
+}
+
+#bottom-nav li:hover {color: #000}
+
+#search {
+  display: flex;
+  height: 50px;
+  width: 51px;
+  margin: 0;
+  border-left: 1px solid #eee;
+}
+
+#search div {
+  background: url('../images/icons-sprite.svg') no-repeat -752px -752px;
+  width: 16px;
+  height: 16px;
+  margin: auto;
+}
+
+#search:hover div {background: url('../images/icons-sprite.svg') no-repeat -768px -768px}
+
+#menu-dots {
+  display: flex;
+  height: 50px;
+  width: 30px;
+  margin: 0 10px 0 0;
+}
+
+#menu-dots div {
+  background: url('../images/icons-sprite.svg') no-repeat -512px -518px;
+  width: 16px;
+  height: 4px;
+  margin: auto;
+}
+
+#menu-dots:hover div {background: url('../images/icons-sprite.svg') no-repeat -528px -534px}
+
+#email {
+  display: flex;
+  height: 50px;
+  width: 30px;
+  margin: 0;
+}
+
+#email div {
+  background: url('../images/icons-sprite.svg') no-repeat -464px -466px;
+  width: 16px;
+  height: 12px;
+  margin: auto;
+}
+
+#email:hover div {background: url('../images/icons-sprite.svg') no-repeat -480px -482px;}
 /*
  *****************************************
  * Section Header =MediaQuery-Reporter Styles
