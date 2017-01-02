@@ -1,3 +1,40 @@
+
+/*
+ *****************************************
+ * Section Header =nav
+ *****************************************
+*/
+
+nav li {
+  display: inline;
+  vertical-align: -7px;
+  margin: 7px 0 0 10px;
+  color: rgba(255, 255, 255, 0.6);
+  font: 800 12px 'Arimo', sans-serif;
+}
+
+nav li:hover {
+  color: #fff;
+  cursor: pointer; 
+  cursor: hand;
+}
+
+nav ul li:first-child {
+  color: #fff;
+}
+
+nav ul li:nth-child(8) {margin-right: 10px;}
+
+#top-nav {
+  height: 30px;
+  background-color: #000;
+}
+
+.li-right {
+  float: right;
+}
+
+
 /*
  *****************************************
  * Section Header =MediaQuery-Reporter Styles
@@ -21,6 +58,7 @@ body:after {
     content: "320 to 480px";
     background-color: hsla(90,60%,40%,0.7);
   }
+   #top-nav {display: none}
 }
 
 @media only screen and (min-width: 480px) {
@@ -28,6 +66,7 @@ body:after {
     content: "480 to 768px";
     background-color: hsla(180,60%,40%,0.7);
   }
+  #top-nav {display: none}
 }
 
 @media only screen and (min-width: 768px) {
@@ -35,6 +74,7 @@ body:after {
     content: "768 to 1024px";
     background-color: hsla(270,60%,40%,0.7);
   }
+  #top-nav {display: block}
 }
 
 @media only screen and (min-width: 1024px) {
@@ -42,24 +82,5 @@ body:after {
     content: "1024 and up";
     background-color: hsla(360,60%,40%,0.7);
   }
-}
-
-/*
- *****************************************
- * Section Header =nav
- *****************************************
-*/
-
-nav li {
-  display: inline;
-  color: #fff;
-}
-
-#top-nav {
-  height: 30px;
-  background-color: #000;
-}
-
-.li-right {
-  float: right;
+  #top-nav {display: block}
 }
