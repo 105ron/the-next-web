@@ -13,8 +13,6 @@
 
 nav li {
   display: inline;
-  margin: 7px 4px 0 18px;
-  background-color: pink;
 }
 
 nav li:hover {
@@ -55,10 +53,14 @@ nav li:hover {
 
 #bottom-nav li {
   vertical-align: -19px;
-  /*margin: 7px 0 0 10px;*/
+  margin: 7px 0 0 10px;
   color: #aeabaa;
   font: 800 16px 'Ropa Sans', sans-serif;
   text-transform: uppercase;
+}
+
+#bottom-nav .li-right {
+  margin: 0;
 }
 
 #bottom-nav li:hover {color: #000}
