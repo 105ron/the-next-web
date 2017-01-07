@@ -14,7 +14,7 @@
 .logo {
   height: 80px;
   width: 132px;
-  background: -moz-linear-gradient(-45deg, #ce0393 0%, #f46629 100%);
+  background: linear-gradient(-45deg, #ce0393 0%, #f46629 100%);
   float: left;
 }
 
@@ -60,9 +60,9 @@ nav li:hover {
 /*bottom-nav rules*/
 
 #bottom-nav {
-  height: 51px;
+  height: 50px;
   /*temp 51.. move to 50 and remove border bottom*/
-  border-bottom: 1px solid black;
+  /*border-bottom: 1px solid black;*/
   background-color: #fff;
 }
 
@@ -147,6 +147,36 @@ nav li:hover {
 
 /*
  *****************************************
+ * Section Header =cover-page
+ *****************************************
+*/
+
+.cover-page {
+
+  padding: 4px;
+  background-color: black;
+}
+
+.main-article {
+  float: left;
+  padding: 4px;
+}
+
+.one {
+  background-color: red;
+}
+
+.two{
+  background-color: yellow;
+}
+
+.three {
+  background-color: blue;
+}
+
+
+/*
+ *****************************************
  * Section Header =MediaQuery-Reporter Styles
  *****************************************
 */
@@ -168,6 +198,13 @@ body:after {
     content: "320 to 480px";
     background-color: hsla(90,60%,40%,0.7);
   }
+
+  /*
+   *****************************************
+   * Section Header =nav
+   *****************************************
+  */
+
    #top-nav, #bottom-nav {display: none}
    #mobile-bar {
     display: block;
@@ -176,6 +213,10 @@ body:after {
   .logo {
     display: flex;
     height: 50px;
+  }
+  .main-article {
+    min-height: 30vh;
+    width: 100%;
   }
 }
 
@@ -191,11 +232,39 @@ body:after {
     content: "768 to 1024px";
     background-color: hsla(270,60%,40%,0.7);
   }
+
+  /*
+   *****************************************
+   * Section Header =nav
+   *****************************************
+  */
+
   #mobile-bar {display: none}
   #top-nav, #bottom-nav {display: block}
   .logo {
     display: flex;
     height: 80px;
+  }
+
+  /*
+   *****************************************
+   * Section Header =cover-page
+   *****************************************
+  */
+
+  .cover-page {
+    height: 60vh;
+  }
+
+  .main-article {
+    min-height: 0;
+    width: 33.33%;
+    height: 50%;
+  }
+
+  .one {
+    width: 66.66%;
+    height: 100%;
   }
 }
 
@@ -204,6 +273,25 @@ body:after {
     content: "1024 and up";
     background-color: hsla(360,60%,40%,0.7);
   }
+
+  /*
+   *****************************************
+   * Section Header =nav
+   *****************************************
+  */
+
   #top-nav {display: block}
   .logo {display: none}
+  
+  /*
+   *****************************************
+   * Section Header =cover-page
+   *****************************************
+  */
+
+   .cover-page {
+      height: 75vh;
+      max-height: 560px;
+  }
 }
+
