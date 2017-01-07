@@ -2,6 +2,9 @@
 *, *:after, *:before {
   box-sizing: border-box;
 }
+body {
+  background-color: 
+}
 
 /*
  *****************************************
@@ -154,26 +157,33 @@ nav li:hover {
 .cover-page {
 
   padding: 4px;
-  background-color: black;
+  background: linear-gradient(top, #eeeeee 0%,#ffffff 100%,#207cca 100%);
 }
 
 .main-article {
+  position: relative;
   float: left;
   padding: 4px;
+  background-color: inherit;
 }
 
 .one {
-  background-color: red;
+  
 }
 
 .two{
-  background-color: yellow;
+
 }
 
 .three {
-  background-color: blue;
+
 }
 
+article {
+  background-color: pink;
+  width: 100%;
+  height: 100%;
+}
 
 /*
  *****************************************
@@ -217,6 +227,10 @@ body:after {
   .main-article {
     min-height: 30vh;
     width: 100%;
+  }
+
+  article {
+    min-height: 30vh;
   }
 }
 
@@ -265,6 +279,11 @@ body:after {
   .one {
     width: 66.66%;
     height: 100%;
+  }
+
+  article { 
+    min-height: 0;
+    
   }
 }
 
