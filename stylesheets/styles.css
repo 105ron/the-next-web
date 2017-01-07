@@ -14,7 +14,7 @@
 .logo {
   height: 80px;
   width: 132px;
-  background-color: red;
+  background: -moz-linear-gradient(-45deg, #ce0393 0%, #f46629 100%);
   float: left;
 }
 
@@ -22,6 +22,9 @@
   margin: auto;
 }
 
+nav ul {
+  overflow: hidden;
+}
 
 nav li {
   display: inline;
