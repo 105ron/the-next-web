@@ -164,7 +164,6 @@ nav li:hover {
 */
 
 .cover-page {
-
   padding: 4px;
   background: -webkit-linear-gradient(top, #eeeeee 0%,#ffffff 100%,#207cca 100%);
   background: linear-gradient(top, #eeeeee 0%,#ffffff 100%,#207cca 100%);
@@ -189,10 +188,38 @@ nav li:hover {
 
 }
 
-article {
-  background-color: pink;
-  width: 100%;
+.main-article article {
   height: 100%;
+}
+
+.one article {
+  background: url('../images/watch.jpeg') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.two article {
+  background: url('../images/AirBar-Mac.png') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.three article {
+  background: url('../images/Huawei.jpeg') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.cover-trigger {
+  background: url('../images/image-gradient.png') no-repeat rgba(0,0,0,.25);
+  /*background-color: pink;*/
+  background-size: 100% 100%;
+  /*background-image: 
+    linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.06) 11%, rgba(0,0,0,0.17) 23%, rgba(0,0,0,0.78) 73%, rgba(0,0,0,0.92) 88%, rgba(0,0,0,1) 100%),
+    url("https://cdn2.tnwcdn.com/wp-content/blogs.dir/1/files/2017/01/BACtrack-1-of-2-796x398.jpg") no-repeat; */
+  display: block;
+  height: 100%;
+  z-index: 99;
 }
 
 /*
@@ -222,6 +249,7 @@ body:after {
   /*
    *****************************************
    * Section Header =nav
+   * MediaQuery "320 to 480px"
    *****************************************
   */
 
@@ -236,12 +264,20 @@ body:after {
     display: flex;
     height: 50px;
   }
+
+  /*
+   *****************************************
+   * Section Header =cover-page
+   * MediaQuery "320 to 480px"
+   *****************************************
+  */
+
   .main-article {
     min-height: 30vh;
     width: 100%;
   }
 
-  article {
+  article, .cover-trigger {
     min-height: 30vh;
   }
 }
@@ -262,6 +298,7 @@ body:after {
   /*
    *****************************************
    * Section Header =nav
+   * MediaQuery "768 to 1024px"
    *****************************************
   */
 
@@ -277,6 +314,7 @@ body:after {
   /*
    *****************************************
    * Section Header =cover-page
+   * MediaQuery "768 to 1024px"
    *****************************************
   */
 
@@ -295,9 +333,8 @@ body:after {
     height: 100%;
   }
 
-  article { 
-    min-height: 0;
-    
+  article, .cover-trigger { 
+    min-height: 100%;
   }
 }
 
@@ -310,6 +347,7 @@ body:after {
   /*
    *****************************************
    * Section Header =nav
+   * MediaQuery "1024 and up"
    *****************************************
   */
 
@@ -319,6 +357,7 @@ body:after {
   /*
    *****************************************
    * Section Header =cover-page
+   * MediaQuery "1024 and up"
    *****************************************
   */
 
