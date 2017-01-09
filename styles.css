@@ -159,6 +159,15 @@ nav li:hover {
   background: linear-gradient(top, #eeeeee 0%,#ffffff 100%,#207cca 100%);
 }
 
+/*Clearfix for smallest mediaquery*/
+.cover-page:after {
+  clear: both;
+  display: block;
+  content: ' ';
+  visibility: hidden;
+  height: 1%;
+}
+
 .main-article {
   position: relative;
   float: left;
@@ -194,6 +203,17 @@ nav li:hover {
   display: block;
   height: 100%;
   z-index: 99;
+}
+
+/*
+ *****************************************
+ * Section Header =spacer
+ *****************************************
+*/
+
+.spacer div {
+  background-color: #eee;
+  margin: 30px auto;
 }
 
 /*
@@ -252,6 +272,22 @@ body:after {
   article, .cover-trigger {
     min-height: 30vh;
   }
+
+    /*
+   *****************************************
+   * Section Header =spacer
+   * MediaQuery "768 to 1024px"
+   *****************************************
+  */
+  
+  .spacer {
+    padding: 0 25px;
+  }
+
+  .spacer div{
+    height: 50px;
+    width: 100%;
+  }
 }
 
 @media only screen and (min-width: 480px) {
@@ -306,6 +342,20 @@ body:after {
   article, .cover-trigger { 
     min-height: 100%;
   }
+
+  /*
+   *****************************************
+   * Section Header =spacer
+   * MediaQuery "768 to 1024px"
+   *****************************************
+  */
+
+  .spacer div {
+    height: 50px;
+    width: 728px;
+    /*margin: 30px auto;*/
+  }
+
 }
 
 @media only screen and (min-width: 1024px) {
@@ -335,5 +385,14 @@ body:after {
       height: 75vh;
       max-height: 560px;
   }
+
+  /*
+   *****************************************
+   * Section Header =spacer
+   * MediaQuery "768 to 1024px"
+   *****************************************
+  */
+
+  .spacer div {height: 90px;}
 }
 
