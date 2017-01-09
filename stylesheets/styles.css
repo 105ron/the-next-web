@@ -176,35 +176,23 @@ nav li:hover {
   background-color: inherit;
 }
 
-.one {
-  
-}
-
-.two{
-
-}
-
-.three {
-
-}
-
 .main-article article {
   height: 100%;
 }
 
-.one article {
+.main-article.one article {
   background: url('../images/watch.jpeg') no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.two article {
+.main-article.two article {
   background: url('../images/AirBar-Mac.png') no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.three article {
+.main-article.three article {
   background: url('../images/Huawei.jpeg') no-repeat;
   background-size: cover;
   background-position: center;
@@ -212,11 +200,7 @@ nav li:hover {
 
 .cover-trigger {
   background: url('../images/image-gradient.png') no-repeat rgba(0,0,0,.25);
-  /*background-color: pink;*/
   background-size: 100% 100%;
-  /*background-image: 
-    linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.06) 11%, rgba(0,0,0,0.17) 23%, rgba(0,0,0,0.78) 73%, rgba(0,0,0,0.92) 88%, rgba(0,0,0,1) 100%),
-    url("https://cdn2.tnwcdn.com/wp-content/blogs.dir/1/files/2017/01/BACtrack-1-of-2-796x398.jpg") no-repeat; */
   display: block;
   height: 100%;
   z-index: 99;
