@@ -6,6 +6,10 @@ body {
   background-color: 
 }
 
+a {
+  text-decoration: none; 
+}
+
 /*
  *****************************************
  * Section Header =nav
@@ -56,7 +60,7 @@ nav li:hover {
 
 #top-nav li:first-child {color: #fff}
 
-#top-nav li:nth-child(7) {margin-right: 10px;}
+#top-nav li:nth-child(8) {margin-right: 10px;}
 
 #top-nav li:hover {color: #fff}
 
@@ -154,6 +158,7 @@ nav li:hover {
  *****************************************
 */
 
+
 .cover-page {
   padding: 4px;
   background: linear-gradient(top, #eeeeee 0%,#ffffff 100%,#207cca 100%);
@@ -211,6 +216,14 @@ nav li:hover {
  *****************************************
 */
 
+.news-wrapper {
+  padding: 0 20px;
+  max-width: 1192px;
+  height: 500px;
+  background-color: pink;
+  margin: auto;
+}
+
 .spacer div {
   background-color: #eee;
   margin: 30px auto;
@@ -218,9 +231,47 @@ nav li:hover {
 
 /*
  *****************************************
+ * Section Header =latest-news
+ *****************************************
+*/
+
+.news-wrapper h2 a {
+  color: #f42;
+  font: 700 22px sans-serif;
+  margin-bottom: 5px;
+}
+
+.latest h2 a:hover {
+  color: #000;
+}
+
+.latest-list {
+  position: relative;
+  left: -12px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: calc(100% + 24px);
+}
+
+.latest-list li {
+  padding: 12px;
+  background-color: white;
+}
+
+
+/*
+ *****************************************
+ * Section Header =MediaQuery-Reporter Styles
+ *****************************************
+ *****************************************
+ * Section Header =MediaQuery-Reporter Styles
+ *****************************************
+ *****************************************
  * Section Header =MediaQuery-Reporter Styles
  *****************************************
 */
+
  
 body:after {
   content: "less than 320px";
@@ -276,7 +327,7 @@ body:after {
     /*
    *****************************************
    * Section Header =spacer
-   * MediaQuery "768 to 1024px"
+   * MediaQuery "320 to 480px"
    *****************************************
   */
   
@@ -288,6 +339,20 @@ body:after {
     height: 50px;
     width: 100%;
   }
+
+    /*
+   *****************************************
+   * Section Header =latest-news
+   * MediaQuery "320 to 480px"
+   *****************************************
+  */
+
+  .latest-list li {
+    flex-basis: 100%;
+    flex-direction: column;
+  }
+
+
 }
 
 @media only screen and (min-width: 480px) {
@@ -350,10 +415,26 @@ body:after {
    *****************************************
   */
 
+  .spacer {
+    padding: 0;
+  }
+  
   .spacer div {
     height: 50px;
     width: 728px;
     /*margin: 30px auto;*/
+  }
+
+  /*
+   *****************************************
+   * Section Header =latest-news
+   * MediaQuery "768 to 1024px"
+   *****************************************
+  */
+
+  .latest-list li {
+    flex-basis: 33.33%;
+    flex-direction: row;
   }
 
 }
@@ -389,10 +470,22 @@ body:after {
   /*
    *****************************************
    * Section Header =spacer
-   * MediaQuery "768 to 1024px"
+   * MediaQuery "1024 and up"
    *****************************************
   */
 
   .spacer div {height: 90px;}
+
+  /*
+   *****************************************
+   * Section Header =spacer
+   * MediaQuery "1024 and up"
+   *****************************************
+  */
+
+  .latest-list li {
+    flex-basis: 25%
+  }
+
 }
 
