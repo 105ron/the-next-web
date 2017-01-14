@@ -311,22 +311,29 @@ nav li:hover {
 }
 
 .story-title a {
+  display: block;
   font: 700 15px sans-serif;
   line-height: 20px;
   color: #000;
-  display: block;
+  margin-bottom: 10px;
 }
 
 .story-title a:hover {
-  box-shadow: inset 0 -1px 0 rgba(255,68,34,.25);
+  text-decoration: underline;
   color: #f42;
 }
 
-.story-by-line li {
+.story-by-line li, a {
   display: inline;
+  font: 13px Arial,sans-serif;
+  color: #aaa;
 }
 
-.story-by-line li:after {
+.story-by-line a:hover {
+  color: #555;
+}
+
+.story-by-line li:first-child:after {
   content: '\b7';
   margin: 0 4px;
  }
