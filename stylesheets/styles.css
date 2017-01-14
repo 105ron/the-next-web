@@ -392,6 +392,33 @@ nav li:hover {
   display: block;
 }
 
+.top-story {position: relative}
+
+.top-story > header {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 14px;
+  color: #fff;
+}
+
+.white > a:hover {color: #fff}
+
+.top-story h5 {
+  font: 14px 'Quantico', sans-serif;
+}
+
+.sub-heading {padding: 2px 0}
+
+.sub-heading a {
+  font: 700 20px "Helvetica Neue",Arial,sans-serif;
+  line-height: 18px;
+  padding-bottom: 4px;
+  color: #fff;
+}
+
+.sub-heading a:hover {text-decoration: underline}
+
 /*
  *****************************************
  * Section Header =MediaQuery-Reporter Styles
@@ -520,6 +547,7 @@ body:after {
   .news-text-container {
     margin: 0 0 0 20px;
   }
+
 
   /*
    *****************************************
