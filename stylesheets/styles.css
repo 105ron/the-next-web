@@ -30,6 +30,12 @@ a {
   margin: auto;
 }
 
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+}
+
 nav ul {
   overflow: hidden;
 }
@@ -402,6 +408,9 @@ body:after {
     display: block;
     height: 50px;
   }
+
+  #mobile-bar {background-color: #fff}
+
   .logo {
     display: -webkit-box;
     display: -ms-flexbox;
