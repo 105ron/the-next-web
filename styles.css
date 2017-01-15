@@ -192,13 +192,13 @@ nav li:hover {
   height: 100%;
 }
 
-.main-article.one article {
+.main-article.one article, .alcoholizer {
   background: url('../images/watch.jpeg') no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.main-article.two article {
+.main-article.two article, .airbar {
   background: url('../images/AirBar-Mac.png') no-repeat;
   background-size: cover;
   background-position: center;
@@ -415,7 +415,7 @@ nav li:hover {
 
 .special-image {
   display: block;
-  background-color: blue;
+/*  background-color: blue;*/
   height: 96px;
   width:96px;
   float: right;
@@ -466,6 +466,12 @@ nav li:hover {
 
 .small-story a:hover {
   color: #000;
+}
+
+.sirius {
+  background: url('../images/sirius.jpeg') no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 /*
