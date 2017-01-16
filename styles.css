@@ -510,6 +510,18 @@ nav li:hover {
   background-position: center;
 }
 
+.france {
+  background: url('../images/france.jpeg') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.donald {
+  background: url('../images/donald.jpeg') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 /*
  *****************************************
  * Section Header =MediaQuery-Reporter Styles
