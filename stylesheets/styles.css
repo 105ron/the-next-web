@@ -237,8 +237,6 @@ nav li:hover {
 .news-wrapper {
   padding: 0 20px;
   max-width: 1192px;
-  height: 500px;
-/*  background-color: pink;*/
   margin: auto;
 }
 
@@ -548,6 +546,16 @@ nav li:hover {
   background-position: center;
 }
 
+/*
+ *****************************************
+ * Section Header =footer
+ *****************************************
+*/
+
+footer {
+  background-color: black;
+  height:400px;
+}
 
 /*
  *****************************************
