@@ -498,6 +498,18 @@ nav li:hover {
   background-position: center;
 }
 
+.dna {
+  background: url('../images/dna.jpeg') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.ff {
+  background: url('../images/ff.jpeg') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 /*
  *****************************************
  * Section Header =MediaQuery-Reporter Styles
