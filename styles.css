@@ -522,6 +522,13 @@ nav li:hover {
   background-position: center;
 }
 
+.home-alone {
+  background: url('../images/home-alone.png') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
 /*
  *****************************************
  * Section Header =MediaQuery-Reporter Styles
