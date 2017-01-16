@@ -506,6 +506,18 @@ nav li:hover {
   background-position: center;
 }
 
+.snapchat {
+  background: url('../images/snapchat.jpeg') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bitcoin {
+  background: url('../images/bitcoin.jpeg') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 /*
  *****************************************
  * Section Header =MediaQuery-Reporter Styles
