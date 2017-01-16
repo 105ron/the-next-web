@@ -3,7 +3,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: 
+  background-color: #fff;
 }
 
 a {
@@ -470,6 +470,18 @@ nav li:hover {
 
 .sirius {
   background: url('../images/sirius.jpeg') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.developers {
+  background: url('../images/developers.gif') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.technology {
+  background: url('../images/technology.jpeg') no-repeat;
   background-size: cover;
   background-position: center;
 }
