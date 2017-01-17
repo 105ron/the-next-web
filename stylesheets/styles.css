@@ -234,7 +234,7 @@ nav li:hover {
  *****************************************
 */
 
-.news-wrapper {
+.news-wrapper, .quote {
   padding: 0 20px;
   max-width: 1192px;
   margin: auto;
@@ -451,7 +451,7 @@ nav li:hover {
 }
 
 .special h4 > a {
-  font: 700 14px "Helvetica Neue",Arial,sans-serif;
+  font: 700 14px Arial,sans-serif;
   color: #f42;
 }
 
@@ -552,10 +552,33 @@ nav li:hover {
  *****************************************
 */
 
+.quote-wrapper {background-color: #f6f6f6}
+
+.quote {
+  background-color: #f6f6f6;
+  padding: 42px 0;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.quote > span {
+  color: #555;
+  font: 15px 'Quantico', sans-serif;
+}
+
+.quote > p {
+  color: #f42;
+  font: 900 58px Arial, sans-serif;
+  margin-bottom: 28px;
+}
+
+.quote > p:before, .quote >p:after {content: '"'}
+
 footer {
   background-color: black;
   height:400px;
 }
+
 
 /*
  *****************************************
