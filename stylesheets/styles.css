@@ -221,20 +221,57 @@ nav li:hover {
   background-position: center;
 }
 
-.cover-logo {
-  position: absolute;
-    background: url(../images/tnw.svg) no-repeat;
-    background-size: contain;
-    left: 24px;
-    max-width: 50%;
-    height: 100%;
-    max-height: 112px;
-    line-height: 1;
-    top: 24px;
-    pointer-events: none;
-    text-align: right;
+.main-article header {
+  padding: 14px 20px;
 }
 
+.cover-date, .cover-logo {
+  position: absolute;
+  color: #FFF;
+  z-index: 5;
+  right: 24px;
+}
+
+.cover-logo {
+  background: url(../images/tnw.svg) no-repeat;
+  background-size: contain;
+  left: 24px;
+  top: 24px;
+  max-width: 50%;
+  height: 100%;
+  max-height: 112px;
+  line-height: 1;
+  pointer-events: none;
+  text-align: right;
+}
+
+.cover-date {
+  display: block;
+  top: 16px;
+  font-family: Arial, sans-serif;
+}
+
+.cover-header {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: #fff;
+  width: 100%;
+}
+
+.cover-header > h5 > a {
+  font: 15px 'Quantico', sans-serif;
+  color: #fff;
+} 
+
+.cover-header > h2 > a {
+  font: 700 Arial, sans-serif;
+  color: #fff;
+}
+
+.cover-trigger span, .cover-tigger a {
+  font-family: Arial, sans-serif;
+}
 
 .cover-trigger {
   background: url('../images/image-gradient.png') no-repeat rgba(0,0,0,.25);
@@ -736,7 +773,15 @@ body:after {
     min-height: 30vh;
   }
 
-    /*
+  .cover-logo {display: none}
+
+  .big > h2 > a {font-size: 26px}
+
+  .small > h2 > a {font-size: 26px}
+
+  .cover-date {display: none;}
+
+  /*
    *****************************************
    * Section Header =spacer
    * MediaQuery "320 to 480px"
@@ -890,6 +935,10 @@ body:after {
     min-height: 100%;
   }
 
+  .big > h2 > a {font-size: 42px}
+
+  .small > h2 > a {font-size: 20px}
+
   /*
    *****************************************
    * Section Header =spacer
@@ -1000,10 +1049,18 @@ body:after {
    *****************************************
   */
 
-   .cover-page {
-      height: 75vh;
-      max-height: 560px;
+  .cover-page {
+    height: 75vh;
+    max-height: 560px;
   }
+
+  .cover-logo {display: block}
+
+  .big > h2 > a {font-size: 56px}
+
+  .small > h2 > a {font-size: 28px}
+
+  .cover-date {display: block}
 
   /*
    *****************************************
