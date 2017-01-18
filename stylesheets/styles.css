@@ -619,6 +619,38 @@ footer {
   margin-left: 5px;
 }
 
+.by-line {
+  background-color: #000;
+  padding: 3em 0;
+  color: #aaa;
+  text-align: center; 
+}
+
+.by-line b {
+  color: #f42;
+}
+
+.bottom-logo {
+  display: inline-block;
+  height: 9px;
+}
+
+.tnw {
+  width: 38px;
+  margin-right: 5px;
+  background: url('../images/tnw.svg') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.maxcdn {
+  width: 56px;
+  margin-left: 2px;
+  background: url('../images/maxcdn.svg') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 /*
  *****************************************
  * Section Header =MediaQuery-Reporter Styles
