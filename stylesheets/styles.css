@@ -234,10 +234,13 @@ nav li:hover {
  *****************************************
 */
 
-.news-wrapper, .quote {
-  padding: 0 20px;
+.news-wrapper, .quote, .trending-wrapper {
   max-width: 1192px;
   margin: auto;
+}
+
+.news-wrapper, .quote {
+  padding: 0 20px;
 }
 
 .spacer div {
@@ -576,9 +579,45 @@ nav li:hover {
 
 footer {
   background-color: black;
-  height:400px;
 }
 
+.trending {
+  background-color: #131313;
+  padding: 35px 0;
+}
+
+.trending-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.trending-item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  /*background-color: pink;*/
+}
+
+.trending-item >h3 {
+  font: 400 17px 'Quantico', sans-serif;
+  color: #aaa;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+}
+
+.trending-list a, .trending-list span {
+  font: 16px Arial,sans-serif;
+  color: #fff;
+  line-height: 22px;
+}
+
+.trending-list span {
+  color: #555;
+  margin-left: 5px;
+}
 
 /*
  *****************************************
@@ -718,6 +757,17 @@ body:after {
   */
 
 
+    /*
+   *****************************************
+   * Section Header =footer
+   * MediaQuery "320 to 480px"
+   *****************************************
+  */
+
+  .quote > p {font-size: 40px}
+  
+  .trending-item {-webkit-box-flex: 0;-ms-flex: 0 0 50%;flex: 0 0 50%}
+
 }
 
 /*
@@ -853,6 +903,17 @@ body:after {
             flex: 0 0 50%;
   }
 
+  /*
+   *****************************************
+   * Section Header =footer
+   * MediaQuery "768 to 1024px"
+   *****************************************
+  */
+
+  .quote > p {font-size: 48px}
+
+  .trending-item {-webkit-box-flex: 0;-ms-flex: 0 0 33.33%;flex: 0 0 33.33%}
+
 }
 
 /*
@@ -920,6 +981,15 @@ body:after {
         -ms-flex: 0 0 33.33%;
             flex: 0 0 33.33%;
   }
+
+    /*
+   *****************************************
+   * Section Header =footer
+   * MediaQuery "1024px and up"
+   *****************************************
+  */
+
+  .quote > p {font-size: 58px}
 
 }
 
